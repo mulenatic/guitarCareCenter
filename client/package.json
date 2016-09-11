@@ -1,0 +1,18 @@
+{
+  "name": "guitar-care-center",
+  "version": "0.0.1",
+  "description": "AngularJS Client for the GuitarCareCenter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Kaczmarek",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "momentjs": "^1.1.15",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.3"
+  }
+}

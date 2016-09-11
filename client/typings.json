@@ -1,0 +1,7 @@
+{
+  "name": "guitar-care-center",
+  "dependencies": {},
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160909133806"
+  }
+}
