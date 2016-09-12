@@ -1,0 +1,16 @@
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+    entry: "./main",
+    output: {
+	path: './dist',
+	filename: 'bundle.js'
+    },
+    watch: true,
+    devServer: {
+	contentBase: "."
+    }
+};
+
+
