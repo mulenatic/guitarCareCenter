@@ -13,6 +13,6 @@ class GuitarCreator {
 
 angular.module(moduleName, [])
     .component("guitarCreator", {
-        template: require("./GuitarCreation.component.html"),
+        template: require("./GuitarCreator.html"),
         controller: GuitarCreator
     });

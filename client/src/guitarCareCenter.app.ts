@@ -1,9 +1,10 @@
 import * as angular from "angular";
 import "angular-route";
 
-import guitarCreator from "./components/GuitarCreation.component";
+import navigation from "./components/Navigation/Navigation";
+import guitarCreator from "./components/GuitarCreator/GuitarCreator";
 
 import routes from "./routes";
 
-let app = angular.module("guitarCareCenterApp", ["ngRoute", guitarCreator, routes]);
+let app = angular.module("guitarCareCenterApp", ["ngRoute", guitarCreator, routes, navigation]);
 
