@@ -1,23 +1,29 @@
 {
-    "name": "guitar-care-center",
-    "version": "0.0.1",
-    "description": "AngularJS Client for the GuitarCareCenter",
-    "main": "index.js",
-    "scripts": {
-	"start": "webpack-dev-server",
-	"test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Thomas Kaczmarek",
-    "license": "ISC",
-    "dependencies": {
-	"angular": "^1.5.8",
-	"bootstrap": "^3.3.7",
-	"momentjs": "^1.1.15",
-	"typescript": "^1.8.10",
-	"typings": "^1.3.3",
-	"webpack": "^1.13.2"
-    },
-    "devDependencies": {
-	"webpack-dev-server": "^1.15.1"
-    }
+  "name": "guitar-care-center",
+  "version": "0.0.1",
+  "description": "AngularJS Client for the GuitarCareCenter",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "Thomas Kaczmarek",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "momentjs": "^1.1.15",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.3",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "html-loader": "^0.4.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "webpack-dev-server": "^1.15.1",
+    "webpack-fail-plugin": "^1.0.5"
+  }
 }

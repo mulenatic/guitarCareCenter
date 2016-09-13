@@ -1,3 +1,9 @@
 import * as angular from "angular";
 
-angular.module("guitarCareCenterApp", []);
+let app = angular.module("guitarCareCenterApp", []);
+
+app.controller("mainCtrl", function ($scope) {
+
+    $scope.greeting = "Hello Thomas!";
+
+});

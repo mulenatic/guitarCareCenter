@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="calendarApp">
+<html ng-app="guitarCareCenterApp">
 <head>
 <meta charset="UTF-8">
-<title>Calendar app</title>
+<title>Guitar Care Center</title>
 <!-- <link href="css/angular-bootstrap.css" rel="stylesheet"> -->
 <style type="text/css">
 [ng\:cloak], [ng-cloak], .ng-cloak {
@@ -11,8 +11,9 @@
 </style>
 </head>
 
-<body>
-    <h1>Guitar Care Center - test</h1>
-    <script src="main.js"></script>
+<body ng-controller="mainCtrl">
+    <h1>Guitar Care Center</h1>
+    {{greeting}}
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
