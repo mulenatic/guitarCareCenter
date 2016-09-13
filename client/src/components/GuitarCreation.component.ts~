@@ -1,0 +1,17 @@
+import * as angular from "angular";
+
+const moduleName = "guitarCareCenterApp.guitarCreationComponent";
+export default moduleName;
+
+class GuitarCreationComponent {
+
+    greeting: string = "Hello Component";
+
+    constructor() { }
+
+}
+
+angular.module(moduleName, [])
+    .component("guitarCreation", {
+        template: require("")
+    });

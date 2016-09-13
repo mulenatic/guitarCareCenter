@@ -1,9 +1,6 @@
 import * as angular from "angular";
 
-let app = angular.module("guitarCareCenterApp", []);
+import guitarCreator from "./components/GuitarCreation.component.ts";
 
-app.controller("mainCtrl", function ($scope) {
+let app = angular.module("guitarCareCenterApp", [guitarCreator]);
 
-    $scope.greeting = "Hello Thomas!";
-
-});
