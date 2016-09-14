@@ -1,3 +1,6 @@
+require('expose?$!expose?jQuery!jquery');
+require("bootstrap-webpack");
+
 import * as angular from "angular";
 import "angular-route";
 
