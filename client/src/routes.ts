@@ -7,8 +7,8 @@ export default moduleName;
 angular.module(moduleName, [])
     .config(($routeProvider: angular.route.IRouteProvider) => {
         $routeProvider
-            .when("/", { template: "<guitar-creator></guitar-creator>" })
-            .otherwise("/");
+            .when("/guitarCreator", { template: "<guitar-creator></guitar-creator>" })
+            .otherwise("/guitarCreator");
     });
 
 
