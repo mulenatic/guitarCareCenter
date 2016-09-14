@@ -1,15 +1,21 @@
 import * as angular from "angular";
 
-import { IGuitar } from "../../domain/IGuitar";
+import { Guitar } from "../../domain/Guitar";
 
 const moduleName = "guitarCareCenterApp.guitarCreationComponent";
 export default moduleName;
 
 class GuitarCreator {
 
-    guitar: IGuitar;
+    guitar: Guitar;
 
-    constructor() { }
+    constructor() {
+        this.guitar = new Guitar();
+    }
+
+    resetForm(): void {
+        this.guitar = new Guitar();
+    }
 
 }
 

@@ -2,26 +2,26 @@
     <form novalidate>
 	<div class="form-group">
 	    <label for="manufacturer">Manufacturer:</label>
-	    <input type="text" class="form-control" id="manufacturer" required ng-model="guitar.manufacturer"/>
+	    <input type="text" class="form-control" id="manufacturer" required ng-model="$ctrl.guitar.manufacturer"/>
 	</div>
 	<div class="form-group">
 	    <label for="model">Model</label>
-	    <input type="text" class="form-control" id="model" required ng-model="guitar.model"/>
+	    <input type="text" class="form-control" id="model" required ng-model="$ctrl.guitar.model"/>
 	</div>
 	<div class="form-group">
 	    <label for="color">Color</label>
-	    <input type="text" class="form-control" id="color" required ng-model="guitar.color"/>
+	    <input type="text" class="form-control" id="color" required ng-model="$ctrl.guitar.color"/>
 	</div>
 	<div class="form-group">
 	    <label for="purchaseDate">Purchase Date</label>
-	    <input type="text" class="form-control" id="purchaseDate" ng-model="guitar.purchaseDate"/>
+	    <input type="text" class="form-control" id="purchaseDate" ng-model="$ctrl.guitar.purchaseDate"/>
 	</div>
 	<div class="form-group">
 	    <label for="price">Price</label>
-	    <input type="text" class="form-control" id="price" ng-model="guitar.price"/>
+	    <input type="text" class="form-control" id="price" ng-model="$ctrl.guitar.price"/>
 	</div>
 	<div class="pull-right">
-	    <input type="button" class="btn btn-warning" value="Reset"/>
+	    <input type="button" class="btn btn-warning" value="Reset" ng-click="$ctrl.resetForm()"/>
 	    <input type="submit" class="btn btn-primary" value="Submit"/>
 	</div>
     </form>
