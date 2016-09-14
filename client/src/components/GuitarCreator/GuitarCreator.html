@@ -1,4 +1,4 @@
-<div>
+<div class="container-fluid">
     <form novalidate>
 	<div class="form-group">
 	    <label for="manufacturer">Manufacturer:</label>
@@ -20,7 +20,19 @@
 	    <label for="price">Price</label>
 	    <input type="text" class="form-control" id="price" ng-model="guitar.price"/>
 	</div>
-	<input type="button" class="btn btn-primary" value="Reset"/>
-	<input type="submit" class="btn btn-primary" value="Submit"/>
+	<div class="pull-right">
+	    <input type="button" class="btn btn-warning" value="Reset"/>
+	    <input type="submit" class="btn btn-primary" value="Submit"/>
+	</div>
     </form>
 </div>
+
+<style type="text/css">
+ form input.ng-invalid {
+     background-color: #ffcccc;
+ }
+
+ form input.ng-valid.ng-touched {
+     background-color: #ccffcc;
+ }
+</style>
