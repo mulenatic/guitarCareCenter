@@ -2,10 +2,12 @@ import * as angular from "angular";
 
 import {IGuitar} from "../domain/IGuitar";
 
-const moduleName = "guitarCareCenterApp.GuitarService";
-export default moduleName;
+export interface IGuitarService {
+    getAll(): Array<IGuitar>;
+    add(guitar: IGuitar);
+}
 
-class GuitarService {
+class GuitarService implements IGuitarService {
 
     guitars: Array<IGuitar>;
 
@@ -18,5 +20,8 @@ class GuitarService {
     }
 
 }
+
+const moduleName = "guitarCareCenterApp.GuitarService";
+export default moduleName;
 
 angular.module(moduleName, []).service("GuitarService", GuitarService);
