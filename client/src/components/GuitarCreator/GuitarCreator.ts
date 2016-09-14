@@ -1,11 +1,13 @@
 import * as angular from "angular";
 
+import { IGuitar } from "../../domain/IGuitar";
+
 const moduleName = "guitarCareCenterApp.guitarCreationComponent";
 export default moduleName;
 
 class GuitarCreator {
 
-    greeting: string = "Hello Component";
+    guitar: IGuitar;
 
     constructor() { }
 
