@@ -4,32 +4,20 @@ import {IGuitar} from "../domain/IGuitar";
 import {Guitar} from "../domain/Guitar";
 
 export interface IGuitarService {
-    getAll(): Array<IGuitar>;
+    getAll(): ng.IPromise<IGuitar[]>;
     add(guitar: IGuitar);
 }
 
 export class GuitarService implements IGuitarService {
 
-    guitars: Array<IGuitar>;
-
-    getAll(): Array<IGuitar> {
-        return this.guitars;
+    getAll(): ng.IPromise<IGuitar[]> {
+        return this.$http.get<IGuitar[]>("guitars.json").then(response => response.data);
     }
 
     add(guitar: IGuitar) {
-        this.guitars.push(guitar);
     }
 
-    constructor() {
-        this.guitars = new Array<IGuitar>();
-        for (let i: number = 0; i < 5; i++) {
-            let guitar = new Guitar();
-            guitar.manufacturer = "Fender";
-            guitar.model = "Eric Clapton signature Stratocaster";
-            guitar.color = "white";
-            this.guitars.push(guitar);
-        }
-
+    constructor(private $http: ng.IHttpService) {
     }
 
 }

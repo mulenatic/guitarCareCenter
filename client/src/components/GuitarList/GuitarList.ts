@@ -11,7 +11,7 @@ class GuitarList {
     guitars: Array<IGuitar>;
 
     constructor(guitarService: IGuitarService) {
-        this.guitars = guitarService.getAll();
+        guitarService.getAll().then(guitars => this.guitars = guitars);
     }
 
 }
