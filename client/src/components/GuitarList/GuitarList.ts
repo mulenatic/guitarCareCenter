@@ -16,7 +16,8 @@ class GuitarList {
 
 }
 
-angular.module(moduleName, [GuitarServiceModule]).component("guitarList", {
-    template: require("./GuitarList.html"),
-    controller: GuitarList
-});
+angular.module(moduleName, [GuitarServiceModule])
+    .component("guitarList", {
+        template: require("./GuitarList.html"),
+        controller: GuitarList
+    });
