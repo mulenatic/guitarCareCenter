@@ -22,9 +22,14 @@ export class GuitarService implements IGuitarService {
 
     constructor() {
         this.guitars = new Array<IGuitar>();
-        let guitar = new Guitar();
-        guitar.manufacturer = "Fender";
-        this.guitars.push(guitar);
+        for (let i: number = 0; i < 5; i++) {
+            let guitar = new Guitar();
+            guitar.manufacturer = "Fender";
+            guitar.model = "Eric Clapton signature Stratocaster";
+            guitar.color = "white";
+            this.guitars.push(guitar);
+        }
+
     }
 
 }

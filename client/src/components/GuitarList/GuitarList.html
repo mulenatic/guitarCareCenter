@@ -2,7 +2,9 @@
     <div class="page-header">
 	<h1>Guitar list</h1>
     </div>
-    <ul>
-	<li ng-repeat="guitar in $ctrl.guitars">{{guitar | json}}</li>
-    </ul>
+    <div class="list-group">
+	<a href="/#/" class="list-group" ng-repeat="guitar in $ctrl.guitars"><h4 class="list-group-item-heading">{{guitar.manufacturer}} - {{guitar.model}}</h4>
+	    <p class="list-group-item-body">{{guitar.color}}</p>
+	</a>
+    </div>
 </div>
